@@ -1,0 +1,45 @@
+<h1>HEROS</h1>
+<hr/>
+
+<div class="heros-page">
+  <div class="left-section">
+    
+    <div class=hero-list>
+      <div class="hero-card" *ngFor="let hero of heros" (click)="onHeroSelect(hero)"
+      [class.selected]="hero === selectedHero" >
+        <h2>
+          {{hero.name | uppercase}}
+        </h2>
+        <div class="attribute-items">
+          <p class="attribute-item">
+            <span class="attribute">ID : </span>
+            <span class="attribute-value">{{hero.id}}</span>
+          </p>
+          <p>
+            <span class="attribute">Name : </span>
+            <span class="attribute-value">{{hero.name | titlecase}}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="right-section">
+      <div class="hero-card" *ngIf="selectedHero">
+        <h2>
+          Edit - {{selectedHero.name | uppercase}}
+        </h2>
+        <div class="attribute-items">
+          <p class="attribute-item">
+            <span class="attribute">ID : </span>
+            <span class="attribute-value">{{selectedHero.id}}</span>
+          </p>
+          <p>
+            <span class="attribute">Name : </span>
+            <input type="text" [(ngModel)]="selectedHero.name" class="attribute-value-input">
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<div class="hero-card" *ngIf="hero">
+    <h2>
+      Edit - {{hero.name | uppercase}}
+    </h2>
+    <div class="attribute-items">
+      <p class="attribute-item">
+        <span class="attribute">ID : </span>
+        <span class="attribute-value">{{hero.id}}</span>
+      </p>
+      <p>
+        <span class="attribute">Name : </span>
+        <input type="text" [(ngModel)]="hero.name" class="attribute-value-input">
+      </p>
+    </div>
+  </div>

@@ -1,0 +1,63 @@
+.heros-page .left-section {
+    width: 70%;
+    float: left;
+    border-right: 1px solid darkblue;
+}
+
+.heros-page .right-section {
+    width: 27%;
+    float: left;
+}
+
+.hero-card {
+    border: solid 1px rosybrown;
+    max-width: 200px;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero-card :focus {
+    border: solid 1px royalblue;
+}
+
+.selected {
+    background-color: antiquewhite;
+}
+
+.hero-card h2 {
+    color: firebrick;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    margin: 0;
+    background-color: burlywood;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.hero-card .attribute-items {
+    padding: 20px;
+}
+.hero-card .attribute-item {
+
+}
+
+.hero-card .attribute {
+    
+}
+
+.hero-card .attribute-value {
+}
+
+.hero-card input {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px sandybrown;
+    text-transform: capitalize;
+    width: 100%;
+
+}
+
+.hero-card .attribute-value-input {
+    display: inline-block;
+}
